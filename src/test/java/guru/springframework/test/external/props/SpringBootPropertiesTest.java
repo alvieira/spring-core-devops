@@ -8,7 +8,7 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.TestPropertySource;
 import org.springframework.test.context.web.WebAppConfiguration;
 
-import guru.springframework.test.SpringBootJavaConfig;
+import guru.springframework.test.config.SpringBootJavaConfig;
 import guru.springframework.test.jms.FakeJmsBroker;
 
 @SpringBootTest(classes = SpringBootJavaConfig.class)
