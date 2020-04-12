@@ -1,0 +1,13 @@
+CREATE USER 'springframework'@'localhost' IDENTIFIED BY 'springframework';
+
+GRANT SELECT ON springguru.* to 'springframework'@'localhost';
+GRANT INSERT ON springguru.* to 'springframework'@'localhost';
+GRANT DELETE ON springguru.* to 'springframework'@'localhost';
+GRANT UPDATE ON springguru.* to 'springframework'@'localhost';
+
+CREATE USER 'qa2userguru'@'localhost' IDENTIFIED BY 'qa2password';
+
+GRANT SELECT ON qa2.* to 'qa2userguru'@'localhost';
+GRANT INSERT ON qa2.* to 'qa2userguru'@'localhost';
+GRANT DELETE ON qa2.* to 'qa2userguru'@'localhost';
+GRANT UPDATE ON qa2.* to 'qa2userguru'@'localhost';
