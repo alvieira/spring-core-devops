@@ -8,6 +8,8 @@ public class SpringCoreDevopsApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(SpringCoreDevopsApplication.class, args);
+		
+		// Testing triggering a Jenkins Build
 	}
 
 }
