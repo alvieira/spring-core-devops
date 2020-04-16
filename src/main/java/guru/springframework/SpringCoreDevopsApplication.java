@@ -7,9 +7,9 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class SpringCoreDevopsApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(SpringCoreDevopsApplication.class, args);
+		SpringApplication.run(SpringCoreDevopsApplication.class, args);		
 		
-		// Testing triggering a Jenkins Build
+		// Testing triggering a Jenkins Build on Digital Ocean
 	}
 
 }
