@@ -11,7 +11,7 @@
 	</parent>
 	<groupId>com.example</groupId>
 	<artifactId>spring-core-devops</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>0.0.3-SNAPSHOT</version>
 	<name>spring-core-devops</name>
 	<description>Spring Framework DevOps AWS</description>
 
@@ -53,12 +53,11 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
-			<exclusions>
-				<exclusion>
-					<groupId>org.junit.vintage</groupId>
-					<artifactId>junit-vintage-engine</artifactId>
-				</exclusion>
-			</exclusions>
+		</dependency>
+		<dependency>
+			<groupId>com.google.guava</groupId>
+			<artifactId>guava</artifactId>
+			<version>28.2-jre</version>
 		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
@@ -76,9 +75,15 @@
 		</dependency>
 
 		<dependency>
-			<groupId>com.github.ulisesbocchio</groupId>
-			<artifactId>jasypt-spring-boot-starter</artifactId>
-			<version>2.0.0</version>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-test</artifactId>
+			<scope>test</scope>
+			<exclusions>
+				<exclusion>
+					<groupId>org.junit.vintage</groupId>
+					<artifactId>junit-vintage-engine</artifactId>
+				</exclusion>				
+			</exclusions>
 		</dependency>
 
 		<!--JMS Dep -->
@@ -108,5 +113,19 @@
 			</plugin>
 		</plugins>
 	</build>
+
+	<distributionManagement>
+		<repository>
+			<id>central</id>
+			<name>089a04cc9250-releases</name>
+			<url>http://161.35.0.16:8082/artifactory/libs-release-local</url>
+		</repository>
+
+		<snapshotRepository>
+			<id>snapshots</id>
+			<name>089a04cc9250-snapshots</name>
+			<url>http://161.35.0.16:8082/artifactory/libs-snapshot-local</url>
+		</snapshotRepository>
+	</distributionManagement>
 
 </project>
