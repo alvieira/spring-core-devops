@@ -82,7 +82,7 @@
 				<exclusion>
 					<groupId>org.junit.vintage</groupId>
 					<artifactId>junit-vintage-engine</artifactId>
-				</exclusion>				
+				</exclusion>
 			</exclusions>
 		</dependency>
 
@@ -117,15 +117,16 @@
 	<distributionManagement>
 		<repository>
 			<id>central</id>
-			<name>089a04cc9250-releases</name>
+			<name>f9f19864cc89-releases</name>
 			<url>http://161.35.0.16:8082/artifactory/libs-release-local</url>
 		</repository>
-
 		<snapshotRepository>
 			<id>snapshots</id>
-			<name>089a04cc9250-snapshots</name>
+			<name>f9f19864cc89-snapshots</name>
 			<url>http://161.35.0.16:8082/artifactory/libs-snapshot-local</url>
 		</snapshotRepository>
 	</distributionManagement>
+
+
 
 </project>
